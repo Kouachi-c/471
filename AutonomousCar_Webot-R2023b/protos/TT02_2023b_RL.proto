@@ -74,7 +74,7 @@ PROTO TT02_2023b_RL [
         name "TT02_speaker"
       }
       DistanceSensor {
-        name "Ultrason"
+        name "UltraSon"
         translation 1 1 1
         MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
         SFString type                     "sonar"             # {"generic", "infra-red", "sonar", "laser"}
@@ -85,7 +85,7 @@ PROTO TT02_2023b_RL [
         SFFloat  redColorSensitivity      1                     # [0, inf)
       }
       DistanceSensor {
-        name "InfraRed-Left"
+        name "InfraRedLeft"
         translation 1 0 1
         MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
         SFString type                     "infra-red"             # {"generic", "infra-red", "sonar", "laser"}
@@ -96,7 +96,7 @@ PROTO TT02_2023b_RL [
         SFFloat  redColorSensitivity      1                     # [0, inf)
       }
       DistanceSensor {
-        name "InfraRed-Right"
+        name "InfraRedRight"
         translation 1 1 0
         MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
         SFString type                     "infra-red"             # {"generic", "infra-red", "sonar", "laser"}
