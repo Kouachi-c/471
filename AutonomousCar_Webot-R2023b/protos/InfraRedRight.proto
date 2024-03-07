@@ -1,11 +1,29 @@
-DistanceSensor {
-    name "InfraRedRight"
-    translation 1 0 1
+#VRML_SIM R2023b utf8
+
+
+PROTO InfraRedRight [
+  field SFVec3f    translation   1 1 1
+  field SFRotation rotation      0 0 1 0
+  field SFString   name          "InfraRed Right"
+  field SFString   type          "infra-red"
+  field SFInt32  numberOfRays             1                     # [1, inf)
+  field SFFloat  aperture                 1.5708                # [0, 2*pi]
+  field SFFloat  gaussianWidth            1                     # [0, inf)
+  field SFFloat  resolution               -1                    # {-1, [0, inf)}
+  field SFFloat  redColorSensitivity      1                     # [0, inf)
+  field SFFloat  noise                    0.00085
+]
+{
+  DistanceSensor {
+    name IS name
+    translation IS translation
     MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
-    SFString type                     "infra-red"             # {"generic", "infra-red", "sonar", "laser"}
-    SFInt32  numberOfRays             1                     # [1, inf)
-    SFFloat  aperture                 1.5708                # [0, 2*pi]
-    SFFloat  gaussianWidth            1                     # [0, inf)
-    SFFloat  resolution               -1                    # {-1, [0, inf)}
-    SFFloat  redColorSensitivity      1                     # [0, inf)
+    type IS type  
+    numberOfRays IS numberOfRays
+    aperture IS aperture
+    gaussianWidth IS gaussianWidth
+    resolution IS resolution
+    redColorSensitivity IS redColorSensitivity
+    noise IS noise
   }
+}

@@ -76,13 +76,13 @@ PROTO TT02_2023b_RL [
       DistanceSensor {
         name "UltraSon"
         translation 1 1 1
-        MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
-        SFString type                     "sonar"             # {"generic", "infra-red", "sonar", "laser"}
-        SFInt32  numberOfRays             1                     # [1, inf)
-        SFFloat  aperture                 1.5708                # [0, 2*pi]
-        SFFloat  gaussianWidth            1                     # [0, inf)
-        SFFloat  resolution               -1                    # {-1, [0, inf)}
-        SFFloat  redColorSensitivity      1                     # [0, inf)
+        lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
+        type                     "sonar"             # {"generic", "infra-red", "sonar", "laser"}
+        numberOfRays             1                     # [1, inf)
+        aperture                 1.5708                # [0, 2*pi]
+        gaussianWidth            1                     # [0, inf)
+        resolution               -1                    # {-1, [0, inf)}
+        redColorSensitivity      1                     # [0, inf)
       }
       DistanceSensor {
         name "InfraRedLeft"

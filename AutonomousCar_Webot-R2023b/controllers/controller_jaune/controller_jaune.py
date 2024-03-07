@@ -6,7 +6,7 @@
 # août 2023
 
 from vehicle import Driver
-from controller import Lidar
+from controller import Lidar, DistanceSensor
 import numpy as np
 import time
 
@@ -19,6 +19,14 @@ sensorTimeStep = 4 * basicTimeStep
 lidar = Lidar("RpLidarA2")
 lidar.enable(sensorTimeStep)
 lidar.enablePointCloud() 
+
+#DistanceSensor
+infrared_left = DistanceSensor("InfraRedLeft")
+infrared_right = DistanceSensor("InfraRedRight")
+ultrason = DistanceSensor("UltraSon")
+infrared_left.enable(sensorTimeStep)
+infrared_right.enable(sensorTimeStep)
+ultrason.enable(sensorTimeStep)
 
 # vitesse en km/h
 speed = 0
