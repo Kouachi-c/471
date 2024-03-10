@@ -21,12 +21,12 @@ lidar.enable(sensorTimeStep)
 lidar.enablePointCloud() 
 
 #DistanceSensor
-infrared_left = DistanceSensor("InfraRedLeft")
-infrared_right = DistanceSensor("InfraRedRight")
-ultrason = DistanceSensor("UltraSon")
+infrared_left = DistanceSensor("ds")
+#infrared_right = DistanceSensor("InfraRedRight")
+#ultrason = DistanceSensor("UltraSon")
 infrared_left.enable(sensorTimeStep)
-infrared_right.enable(sensorTimeStep)
-ultrason.enable(sensorTimeStep)
+#infrared_right.enable(sensorTimeStep)
+#ultrason.enable(sensorTimeStep)
 
 # vitesse en km/h
 speed = 0

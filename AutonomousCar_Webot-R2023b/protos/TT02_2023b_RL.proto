@@ -2,6 +2,7 @@
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/vehicles/protos/abstract/Car.proto"
 EXTERNPROTO "TT02Wheel.proto"
+EXTERNPROTO "UltraSon.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/slamtec/protos/RpLidarA2.proto"
 
 PROTO TT02_2023b_RL [
@@ -74,37 +75,52 @@ PROTO TT02_2023b_RL [
         name "TT02_speaker"
       }
       DistanceSensor {
-        name "UltraSon"
-        translation 1 1 1
-        lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
-        type                     "sonar"             # {"generic", "infra-red", "sonar", "laser"}
-        numberOfRays             1                     # [1, inf)
-        aperture                 1.5708                # [0, 2*pi]
-        gaussianWidth            1                     # [0, inf)
-        resolution               -1                    # {-1, [0, inf)}
-        redColorSensitivity      1                     # [0, inf)
-      }
-      DistanceSensor {
-        name "InfraRedLeft"
-        translation 1 0 1
-        MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
-        SFString type                     "infra-red"             # {"generic", "infra-red", "sonar", "laser"}
-        SFInt32  numberOfRays             1                     # [1, inf)
-        SFFloat  aperture                 1.5708                # [0, 2*pi]
-        SFFloat  gaussianWidth            1                     # [0, inf)
-        SFFloat  resolution               -1                    # {-1, [0, inf)}
-        SFFloat  redColorSensitivity      1                     # [0, inf)
-      }
-      DistanceSensor {
-        name "InfraRedRight"
-        translation 1 1 0
-        MFVec3f  lookupTable              [ 0 0 0, 0.1 1000 0 ] # lookup table
-        SFString type                     "infra-red"             # {"generic", "infra-red", "sonar", "laser"}
-        SFInt32  numberOfRays             1                     # [1, inf)
-        SFFloat  aperture                 1.5708                # [0, 2*pi]
-        SFFloat  gaussianWidth            1                     # [0, inf)
-        SFFloat  resolution               -1                    # {-1, [0, inf)}
-        SFFloat  redColorSensitivity      1                     # [0, inf)
+        rotation 0.9936339104711146 0.07966069282237355 -0.07966069282237355 -1.5771853071795858
+        name "ds"
+        children [
+          Shape { # sensor
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              roughness 0.4
+              metalness 0
+            }
+            geometry Box {
+              size 0.002 0.007 0.004
+            }
+          }
+          Shape { # pins
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.02 0.02 0.02
+              }
+            }
+            geometry IndexedLineSet {
+              coord Coordinate {
+                point [
+                  0 0.003 0 0 0.003 0.004 0 0.001 0 0 0.001 0.004 0 -0.001 0 0 -0.001 0.004 0 -0.003 0 0 -0.003 0.004
+                ]
+              }
+              coordIndex [
+                0, 1, -1, 2, 3, -1, 4, 5, -1, 6, 7
+              ]
+            }
+          }
+        ]
+        lookupTable [
+          0 4095 0.002
+          0.005 2133.33 0.003
+          0.01 1465.73 0.007
+          0.015 601.46 0.0406
+          0.02 383.84 0.01472
+          0.03 234.93 0.0241
+          0.04 158.03 0.0287
+          0.05 120 0.04225
+          0.06 104.09 0.03065
+          0.07 67.19 0.04897
+        ]
+        type "infra-red"
+        numberOfRays IS numberOfRays
+        aperture 0.1
       }
       Lidar {
         translation 0.2 0 0.084

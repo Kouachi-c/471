@@ -7,6 +7,7 @@
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MattePaint.proto"
 
+
 PROTO RpLidarA2 [
   field SFVec3f    translation   0 0 0.031
   field SFRotation rotation      0 0 1 0
