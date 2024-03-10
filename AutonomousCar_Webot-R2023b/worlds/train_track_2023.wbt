@@ -41,7 +41,7 @@ DEF sparringpartner_car_0 TT02_2023b {
   rotation -6.790870000785373e-05 -0.00015798043629669365 0.999999985215295 1.2223472987239363
   name "sparringpartner_car_0"
   controller "controller_jaune"
-  color 0.69 0.7 0.2
+  color 0.69 0.3 0.2
 }
 DEF sparringpartner_car_1 TT02_2023b {
   hidden position_0_0 0.023217762932975283
@@ -95,7 +95,7 @@ DEF sparringpartner_car_2 TT02_2023b {
   rotation -6.807697357711142e-05 0.0001555969801090822 -0.9999999855775527 2.932648188174954
   name "sparringpartner_car_2"
   controller "controller_jaune"
-  color 0.69 0.7 0.2
+  color 0.69 0.9 0.2
 }
 DEF TT02_2023b_RL TT02_2023b_RL {
   hidden position_0_0 -0.04041086304699257
