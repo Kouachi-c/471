@@ -21,10 +21,10 @@ lidar.enable(sensorTimeStep)
 lidar.enablePointCloud() 
 
 #DistanceSensor
-infrared_left = DistanceSensor("ds")
+ultrason = DistanceSensor("ds")
 #infrared_right = DistanceSensor("InfraRedRight")
 #ultrason = DistanceSensor("UltraSon")
-infrared_left.enable(sensorTimeStep)
+ultrason.enable(sensorTimeStep)
 #infrared_right.enable(sensorTimeStep)
 #ultrason.enable(sensorTimeStep)
 

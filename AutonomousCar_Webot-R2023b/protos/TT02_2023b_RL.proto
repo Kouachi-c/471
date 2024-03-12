@@ -80,7 +80,7 @@ PROTO TT02_2023b_RL [
         children [
           Shape { # sensor
             appearance PBRAppearance {
-              baseColor 0 0 0
+              baseColor 0 1 0
               roughness 0.4
               metalness 0
             }

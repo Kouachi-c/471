@@ -49,16 +49,10 @@ PROTO UltraSon [
           }
         ]
         lookupTable [
-          0 4095 0.002
-          0.005 2133.33 0.003
-          0.01 1465.73 0.007
-          0.015 601.46 0.0406
-          0.02 383.84 0.01472
-          0.03 234.93 0.0241
-          0.04 158.03 0.0287
-          0.05 120 0.04225
-          0.06 104.09 0.03065
-          0.07 67.19 0.04897
+          0     1023  0,
+          0.02  1023  0.05,
+          10     0     0.4 
+
         ]
         type "infra-red"
         numberOfRays IS numberOfRays
@@ -66,6 +60,6 @@ PROTO UltraSon [
       }
     ]
     name IS name
-    model "e-puck distance sensor"
+    model "TT02 distance sensor"
   }
 }
