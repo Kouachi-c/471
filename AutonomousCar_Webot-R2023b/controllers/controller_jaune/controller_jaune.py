@@ -21,7 +21,7 @@ lidar.enable(sensorTimeStep)
 lidar.enablePointCloud() 
 
 #DistanceSensor
-ultrason = DistanceSensor("ds")
+ultrason = DistanceSensor("Mir100UltrasonicSensor")
 #infrared_right = DistanceSensor("InfraRedRight")
 #ultrason = DistanceSensor("UltraSon")
 ultrason.enable(sensorTimeStep)
@@ -77,3 +77,4 @@ while driver.step() != -1:
             set_direction_degre(angle_degre)
             vitesse_m_s = 0.5
             set_vitesse_m_s(vitesse_m_s)
+            print(f"ultrason value is : {ultrason.getValue()+1}")

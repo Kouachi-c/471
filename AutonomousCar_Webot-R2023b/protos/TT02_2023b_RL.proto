@@ -4,6 +4,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "TT02Wheel.proto"
 EXTERNPROTO "UltraSon.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/slamtec/protos/RpLidarA2.proto"
+EXTERNPROTO "webots://projects/appearances/protos/Plastic.proto"
+EXTERNPROTO "webots://projects/appearances/protos/CorrodedMetal.proto"
 
 PROTO TT02_2023b_RL [
   field SFVec3f    translation     0 0 0.036               # Is `Transform.translation`.
@@ -20,6 +22,11 @@ PROTO TT02_2023b_RL [
   field SFFloat    lidarNoise_OverMaxRange   0.000833      # Is `Lidar.noise`.
   field SFFloat    lidarResolution           0.01          # Is `Lidar.resolution`.
   field SFFloat    lidarDefaultFrequency     12            # Is `Lidar.defaultFrequency`.
+  field SFVec3f    distanceSensorTranslation    0.4 0 0.084
+  field SFRotation distanceSensorRotation       0 0 1 0
+  field SFString   distanceSensorName           "Mir100UltrasonicSensor"
+  field MFVec3f    distanceSensorLookupTable    [0.01 1000 0, 0.35 0 0]   # Defines the `lookupTable` field of the `DistanceSensor`.
+  #field SFBool     enablePhysics  TRUE                      # Defines whether the sensor should have physics.
 ]
 {
   Car {
@@ -75,52 +82,101 @@ PROTO TT02_2023b_RL [
         name "TT02_speaker"
       }
       DistanceSensor {
-        rotation 0.9936339104711146 0.07966069282237355 -0.07966069282237355 -1.5771853071795858
-        name "ds"
+        translation IS distanceSensorTranslation
+        rotation IS distanceSensorRotation
         children [
-          Shape { # sensor
-            appearance PBRAppearance {
-              baseColor 0 1 0
-              roughness 0.4
-              metalness 0
+          DEF SENSOR_BASE Shape {
+            appearance Plastic {
+              colorOverride 0.0168 0.352 0.6313
             }
             geometry Box {
-              size 0.002 0.007 0.004
+              size 0.001 0.05 0.0223
             }
           }
-          Shape { # pins
-            appearance Appearance {
-              material Material {
-                diffuseColor 0.02 0.02 0.02
-              }
-            }
-            geometry IndexedLineSet {
-              coord Coordinate {
-                point [
-                  0 0.003 0 0 0.003 0.004 0 0.001 0 0 0.001 0.004 0 -0.001 0 0 -0.001 0.004 0 -0.003 0 0 -0.003 0.004
+          DEF LEFT_CYLINDER Pose {
+            translation 0.0057 0.0128 0
+            rotation 0 1 0 1.5708
+            children [
+              DEF SENSOR_CYLINDER Group {
+                children [
+                  Shape {
+                    appearance CorrodedMetal {
+                      IBLStrength 3
+                    }
+                    geometry DEF SENSOR_CYLINDER_EXT Cylinder {
+                      height 0.012
+                      radius 0.01
+                    }
+                  }
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                    }
+                    geometry Cylinder {
+                      bottom FALSE
+                      height 0.0121
+                      radius 0.0085
+                    }
+                  }
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                        emissiveColor 0.4 0.4 0.4
+                      }
+                      texture ImageTexture {
+                        url [
+                          "icons/grid.png"
+                        ]
+                      }
+                      textureTransform TextureTransform {
+                        scale 5 5
+                      }
+                    }
+                    geometry Cylinder {
+                      bottom FALSE
+                      height 0.0122
+                      radius 0.0065
+                    }
+                  }
                 ]
               }
-              coordIndex [
-                0, 1, -1, 2, 3, -1, 4, 5, -1, 6, 7
-              ]
-            }
+            ]
+          }
+          DEF RIGHT_CYLINDER Pose {
+            translation 0.0057 -0.0128 0
+            rotation 0 1 0 1.5708
+            children [
+              USE SENSOR_CYLINDER
+            ]
           }
         ]
-        lookupTable [
-          0 4095 0.002
-          0.005 2133.33 0.003
-          0.01 1465.73 0.007
-          0.015 601.46 0.0406
-          0.02 383.84 0.01472
-          0.03 234.93 0.0241
-          0.04 158.03 0.0287
-          0.05 120 0.04225
-          0.06 104.09 0.03065
-          0.07 67.19 0.04897
-        ]
-        type "infra-red"
-        numberOfRays IS numberOfRays
-        aperture 0.1
+        name IS distanceSensorName
+        model "Mir100UltrasonicSensor"
+        boundingObject Group {
+          children [
+            USE SENSOR_BASE
+            DEF LEFT_CYLINDER_BO Pose {
+              translation 0.0057 0.0128 0
+              rotation 0 1 0 1.5708
+              children [
+                USE SENSOR_CYLINDER_EXT
+              ]
+            }
+            DEF RIGHT_CYLINDER_BO Pose {
+              translation 0.0057 -0.0128 0
+              rotation 0 1 0 1.5708
+              children [
+                USE SENSOR_CYLINDER_EXT
+              ]
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.0085
+        }
+        lookupTable IS distanceSensorLookupTable
+        type "sonar"
       }
       Lidar {
         translation 0.2 0 0.084
