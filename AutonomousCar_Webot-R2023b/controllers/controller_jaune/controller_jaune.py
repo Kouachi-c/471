@@ -84,4 +84,4 @@ while driver.step() != -1:
             vitesse_m_s = 0.5
             #set_vitesse_m_s(vitesse_m_s)
             recule()
-            print(f"ultrason value is : {ultrason.getValue()*1000}")
+            print(f"ultrason value is : {ultrason.getValue()*1000} mm")

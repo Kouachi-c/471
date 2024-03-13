@@ -25,7 +25,7 @@ PROTO TT02_2023b_RL [
   field SFVec3f    distanceSensorTranslation    0.4 0 0.084
   field SFRotation distanceSensorRotation       0 0 1 0
   field SFString   distanceSensorName           "Mir100UltrasonicSensor"
-  field MFVec3f    distanceSensorLookupTable    [0.0 0.0 0.0, 0.03 0.03 0.08, 6.0 6.0, 0.08]   # Defines the `lookupTable` field of the `DistanceSensor`.
+  field MFVec3f    distanceSensorLookupTable    [0.03 0.03 0.08, 6.0 6.0, 0.08]   # Defines the `lookupTable` field of the `DistanceSensor`.
   #field SFBool     enablePhysics  TRUE                      # Defines whether the sensor should have physics.
 ]
 {
