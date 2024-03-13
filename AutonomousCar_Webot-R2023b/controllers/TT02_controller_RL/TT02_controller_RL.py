@@ -19,8 +19,11 @@ from vehicle import Driver
 RECEIVER_SAMPLING_PERIOD = 64	# In milliseconds
 PI = 3.141592653589793
 MAXSPEED = 12 #km/h
+MINSPEED = -1.8 #km/h for the backward
 VITESSE_MAX_M_S = MAXSPEED/3.6
+VITESSE_MIN_M_S = MINSPEED/3.6
 MAXANGLE_DEGRE = 18
+MINANGLE_DEGRE = -18
 RESET_STEP = 16384	# Number of steps between 2 forced resets to avoid overfitting
 
 # Custom Gym environment
@@ -62,7 +65,8 @@ class WebotsGymEnvironment(Driver, gym.Env):
 		self.observation_space = gym.spaces.Dict({
 		"current_lidar":gym.spaces.Box(np.zeros(201), np.ones(201), dtype=np.float64),
 		"previous_lidar":gym.spaces.Box(np.zeros(201), np.ones(201), dtype=np.float64),
-		"previous_speed":gym.spaces.Box(np.array([0]), np.array([1]), dtype=np.float64),
+		"current_ultrason":gym.spaces.Box(np.array([0.03]), np.array([6]), dtype=np.float64),
+		"previous_speed":gym.spaces.Box(np.array([-1]), np.array([1]), dtype=np.float64),
 		"previous_angle":gym.spaces.Box(np.array([-1]), np.array([1]), dtype=np.float64),
 		})
 		
@@ -92,15 +96,15 @@ class WebotsGymEnvironment(Driver, gym.Env):
 		speed = vitesse_m_s*3.6
 		if speed > MAXSPEED :
 			speed = MAXSPEED
-		if speed < 0 :
-			speed = 0
+		if speed < MINSPEED :
+			speed = MINSPEED
 		super().setCruisingSpeed(speed)
 	
 	def set_direction_degre(self,angle_degre):
 		if angle_degre > MAXANGLE_DEGRE:
 			angle_degre = MAXANGLE_DEGRE
-		elif angle_degre < -MAXANGLE_DEGRE:
-			angle_degre = -MAXANGLE_DEGRE   
+		elif angle_degre < MINANGLE_DEGRE:
+			angle_degre = MINANGLE_DEGRE   
 		angle = -angle_degre * PI/180
 		super().setSteeringAngle(angle)
 
@@ -123,6 +127,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			previous_lidar=(np.concatenate((tableau_lidar_mm[0:101],tableau_lidar_mm[260:360]),axis=None)).astype("float64")/12000
 			previous_speed=np.zeros(1)
 			previous_angle=np.zeros(1)
+			current_ultrason = np.array(self.ultrason.getValue())  #en mètre
 
 		else:
 			#grandeurs normalisées pour observation
@@ -134,12 +139,14 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			previous_angle=np.array([self.consigne_angle/MAXANGLE_DEGRE])
 			# si on a un capteur de vitesse sur la voiture relle : 
 			# previous_speed=[(super().getSteeringAngle()*180/PI)/MAXANGLE_DEGRE]
+			current_ultrason = np.array([self.observation["current_ultrason"]])
  
 		observation = {
                         "current_lidar": current_lidar,
                         "previous_lidar":previous_lidar,
                         "previous_speed":previous_speed,
                         "previous_angle":previous_angle,
+						"current_ultrason":current_ultrason,
                       }
 		# print(observation["current_lidar"])
 		self.observation=observation
