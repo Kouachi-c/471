@@ -60,7 +60,13 @@ def set_direction_degre(angle_degre):
     driver.setSteeringAngle(angle)
 
 def recule(): #sur la voiture réelle, il y a un stop puis un recul pendant 1s.
-    driver.setCruisingSpeed(-1)  
+    back_distance = ultrason.getValue()*1000
+    
+    driver.setCruisingSpeed(-2)  
+    if back_distance < 150:
+        print("trop proche")
+    else:
+        print("ok ok ok ok")
 
 # Main loop
 while driver.step() != -1:
@@ -76,5 +82,6 @@ while driver.step() != -1:
             angle_degre = 0.02*(tableau_lidar_mm[60]-tableau_lidar_mm[-60])
             set_direction_degre(angle_degre)
             vitesse_m_s = 0.5
-            set_vitesse_m_s(vitesse_m_s)
-            print(f"ultrason value is : {ultrason.getValue()+1}")
+            #set_vitesse_m_s(vitesse_m_s)
+            recule()
+            print(f"ultrason value is : {ultrason.getValue()*1000}")
