@@ -82,6 +82,6 @@ while driver.step() != -1:
             angle_degre = 0.02*(tableau_lidar_mm[60]-tableau_lidar_mm[-60])
             set_direction_degre(angle_degre)
             vitesse_m_s = 0.5
-            #set_vitesse_m_s(vitesse_m_s)
-            recule()
-            print(f"ultrason value is : {ultrason.getValue()*1000} mm")
+            set_vitesse_m_s(vitesse_m_s)
+            #recule()
+            #print(f"ultrason value is : {ultrason.getValue()*1000} mm")

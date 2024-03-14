@@ -65,7 +65,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 		self.observation_space = gym.spaces.Dict({
 		"current_lidar":gym.spaces.Box(np.zeros(201), np.ones(201), dtype=np.float64),
 		"previous_lidar":gym.spaces.Box(np.zeros(201), np.ones(201), dtype=np.float64),
-		"current_ultrason":gym.spaces.Box(np.array([0.03]), np.array([6]), dtype=np.float64),
+		"current_ultrason":gym.spaces.Box(low=0.03, high=6.0, dtype=np.float64),
 		"previous_speed":gym.spaces.Box(np.array([-1]), np.array([1]), dtype=np.float64),
 		"previous_angle":gym.spaces.Box(np.array([-1]), np.array([1]), dtype=np.float64),
 		})
@@ -127,7 +127,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			previous_lidar=(np.concatenate((tableau_lidar_mm[0:101],tableau_lidar_mm[260:360]),axis=None)).astype("float64")/12000
 			previous_speed=np.zeros(1)
 			previous_angle=np.zeros(1)
-			current_ultrason = np.array(self.ultrason.getValue())  #en mètre
+			current_ultrason = self.ultrason.getValue()    #en mètre
 
 		else:
 			#grandeurs normalisées pour observation
@@ -139,7 +139,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			previous_angle=np.array([self.consigne_angle/MAXANGLE_DEGRE])
 			# si on a un capteur de vitesse sur la voiture relle : 
 			# previous_speed=[(super().getSteeringAngle()*180/PI)/MAXANGLE_DEGRE]
-			current_ultrason = np.array([self.observation["current_ultrason"]])
+			current_ultrason = self.observation["current_ultrason"]
  
 		observation = {
                         "current_lidar": current_lidar,
