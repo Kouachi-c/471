@@ -164,7 +164,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 				mini = obs["current_lidar"][i]
 		
 		#si le lidar indique 0 sur 3 valeurs devant, c'est qu'il y a un souci
-		if obs["current_lidar"][0]==0 and obs["current_lidar"][1]==0 and obs["current_lidar"][-1]==0 :
+		if (obs["current_lidar"][0]==0 and obs["current_lidar"][1]==0 and obs["current_lidar"][-1]==0)  :
 			# Crash
 			self.numero_crash += 1
 			print("crash num " + str(self.numero_crash) + " pb acqui lidar ")
@@ -172,7 +172,7 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			done = True
 		
 		#si la distance au mur est inférieure à 168mm, c'est que la voiture est en collision avec
-		elif mini < 0.014 : #0.014 <-> 168 mm
+		elif mini < 0.014 or obs["current_ultrason"]<0.18 : #0.014 <-> 168 mm
 			# Crash
 			self.numero_crash += 1
 			print("crash num " + str(self.numero_crash) + " distance_mini : " + str(mini))
@@ -186,7 +186,8 @@ class WebotsGymEnvironment(Driver, gym.Env):
 			print("crash num " + str(self.numero_crash) + " vitesse trop grande")
 			reward = -500 
 			done = True	
-		
+		elif obs["current_ultrason"]>0.18 and obs["current_ultrason"]<6 and mini < 0.02:
+			reward = -10 * 5 * super().getTargetCruisingSpeed()
 		else:
 			#Récompense pour une grande distance aux obstacles et une grande vitesse
 			reward = 12 * (mini-0.014) + 3 * super().getTargetCruisingSpeed()
