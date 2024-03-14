@@ -298,7 +298,7 @@ def main():
 	# Model definition
 	model = PPO(policy="MultiInputPolicy",
 		env=env, 
-		learning_rate=5e-4,
+		learning_rate=5e-5,
 		verbose=1,
 		device='cpu',
 		# batch_size=64, # Factor of n_steps
@@ -314,12 +314,12 @@ def main():
 		# ent_coef=0.01)
 
 	#Load learning data
-	print("demonstration")
-	model = PPO.load("PPO_results_2")
+	#print("demonstration")
+	#model = PPO.load("PPO_results_corneille")
 
 	# Training
-	#print("début de l'apprentissage")
-	#model.learn(total_timesteps=1000000)
+	print("début de l'apprentissage")
+	model.learn(total_timesteps=1000000)
 	t1 = time.time()
 	print("fin de l'apprentissage après " + str(t1-t0) + "secondes")
 	print("nombre de collisions : " +str(env.numero_crash))
@@ -328,8 +328,9 @@ def main():
 	print("nombre de démarrage du lidar : " +str(env.nb_demarrage_lidar))
 
 	# Save learning data
-	#model.save("PPO_results_corneille")
-
+	model.save("PPO_results_corneille")
+	print("demonstration")
+	model = PPO.load("PPO_results_corneille")
 	# Demo of the results
 	obs,_ = env.reset()
 	print("Demo of the results.")

@@ -29,6 +29,7 @@ TT02_2023b_RL {
   translation 2.81728 1.45841 0.037101
   rotation -0.0010851701882862055 0.000689484119631326 0.999999173508314 -2.424175307179586
   name "TT02_2023b_RL"
+  controller "TT02_controller_RL"
   color 1 1 1
   distanceSensorTranslation -0.08 0 0.005
   distanceSensorRotation 0 0 1 3.14
