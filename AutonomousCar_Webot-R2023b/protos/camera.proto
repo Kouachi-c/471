@@ -25,7 +25,7 @@ PROTO Astra [
           baseColor 0.000000 0.000000 0.000000
         }
         geometry Mesh {
-          url "meshes/astra.obj"
+          url "astra.obj"
         }
       }
       Camera {
