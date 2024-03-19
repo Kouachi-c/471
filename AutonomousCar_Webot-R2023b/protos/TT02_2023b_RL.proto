@@ -15,18 +15,26 @@ PROTO TT02_2023b_RL [
   field MFString   controllerArgs  []                      # Is `Robot.controllerArgs`.
   field SFString   window          "<generic>"             # Is `Robot.window`.
   field SFBool     synchronization TRUE                    # Is `Robot.synchronization`.
-  field SFColor    color           0.69 0.0 1.0            # Is `Material.diffuseColor`.            
+  field SFColor    color           0.69 0.0 1.0            # Is `Material.diffuseColor`.  
+
   field SFInt32    lidarHorizontalResolution 360           # Is `Lidar.HorizontalResolution`.
   field SFFloat    lidarMinRange             0.1           # Is `Lidar.minRange`.
   field SFFloat    lidarMaxRange             12.0          # Is `Lidar.maxRange`.
   field SFFloat    lidarNoise_OverMaxRange   0.000833      # Is `Lidar.noise`.
   field SFFloat    lidarResolution           0.01          # Is `Lidar.resolution`.
   field SFFloat    lidarDefaultFrequency     12            # Is `Lidar.defaultFrequency`.
+
   field SFVec3f    distanceSensorTranslation    0.4 0 0.084
   field SFRotation distanceSensorRotation       0 0 1 0
   field SFString   distanceSensorName           "Mir100UltrasonicSensor"
   field MFVec3f    distanceSensorLookupTable    [0.03 0.03 0.08, 6.0 6.0, 0.08]   # Defines the `lookupTable` field of the `DistanceSensor`.
   #field SFBool     enablePhysics  TRUE                      # Defines whether the sensor should have physics.
+
+  field SFVec3f    cameraTranslation   0 0 0
+  field SFRotation cameraRotation      0 0 1 0
+  field SFString   cameraName          "Astra"
+  field SFFloat    cameraColorNoise    0.0     # Defines the `noise` field of the `Camera`.
+  field SFFloat    cameraRangeNoise    0.0     # Defines the `noise` field of the `RangeFinder`.
 ]
 {
   Car {
@@ -177,6 +185,63 @@ PROTO TT02_2023b_RL [
         }
         lookupTable IS distanceSensorLookupTable
         type "sonar"
+      }
+      Solid {
+        translation IS cameraTranslation
+        rotation IS cameraRotation
+        children [
+          Shape {
+            appearance MattePaint {
+              baseColor 0.000000 0.000000 0.000000
+            }
+            geometry Mesh {
+              url "meshes/astra.obj"
+            }
+          }
+          Camera {
+            translation 0.027000 0.011000 0.034000
+            name %<= '"' + fields.name.value + ' rgb"' >%
+            fieldOfView 1.04
+            width 640
+            height 480
+            noise IS cameraColorNoise
+          }
+          RangeFinder {
+            translation 0.027000 0.037000 0.034000
+            name %<= '"' + fields.name.value + ' depth"' >%
+            fieldOfView 1.04
+            width 640
+            height 480
+            minRange 0.6
+            maxRange 8
+            noise IS cameraRangeNoise
+          }
+        ]
+        name IS name
+        boundingObject Group {
+          children [
+            DEF MAIN_BODY_BOX Pose {
+              translation 0.006000 0.000000 0.034000
+              children [
+                Box {
+                  size 0.040000 0.165000 0.029000
+                }
+              ]
+            }
+            DEF SUPPORT_BOX Pose {
+              translation -0.009000 0.000000 0.007000
+              children [
+                Box {
+                  size 0.061000 0.060000 0.014000
+                }
+              ]
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.19
+        }
       }
       Lidar {
         translation 0.2 0 0.084
