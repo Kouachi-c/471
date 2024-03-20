@@ -7,9 +7,12 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 2 "controllers/controller_jaune/controller_jaune.py" "controllers/TT02_controller_RL/TT02_controller_RL.py" "controllers/supervisor_controller/supervisor_controller.py"
 consoles: Console:All:All
-renderingDevicePerspectives: TT02_2023b_RL:Astra;1;1;0;0
-renderingDevicePerspectives: TT02_2023b_RL:cameraName_depth;1;1;0;0
-renderingDevicePerspectives: TT02_2023b_jaune:Astra;1;1;0;0
-renderingDevicePerspectives: TT02_2023b_jaune:cameraName_depth;1;1;0;0
-renderingDevicePerspectives: TT02_2023b_violet:Astra;1;1;0;0
-renderingDevicePerspectives: TT02_2023b_violet:cameraName_depth;1;1;0;0
+renderingDevicePerspectives: TT02_2023b_RL:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_RL:Webcam for Robotino 3;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_RL:cameraName_depth;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_jaune:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_jaune:Webcam for Robotino 3;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_jaune:cameraName_depth;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_violet:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_violet:Webcam for Robotino 3;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_violet:cameraName_depth;1;0.895833;0;0
