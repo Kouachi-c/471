@@ -5,7 +5,7 @@ sceneTreePerspectives: 000000ff00000001000000030000001c00000271000000fa010000000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 2 "controllers/controller_jaune/controller_jaune.py" "controllers/TT02_controller_RL/TT02_controller_RL.py" "controllers/supervisor_controller/supervisor_controller.py"
+textFiles: 1 "controllers/controller_jaune/controller_jaune.py" "controllers/TT02_controller_RL/TT02_controller_RL.py" "controllers/supervisor_controller/supervisor_controller.py"
 consoles: Console:All:All
 renderingDevicePerspectives: TT02_2023b_RL:Astra;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_RL:Webcam for Robotino 3;1;0.895833;0;0
