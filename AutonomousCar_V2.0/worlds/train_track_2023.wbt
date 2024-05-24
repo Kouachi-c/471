@@ -1,0 +1,2174 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/TT02_2023b.proto"
+EXTERNPROTO "../protos/TT02_2023b_RL.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.6684780144195842 1.1504142397283506 16.881565652064253
+  followType "Mounted Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF sparringpartner_car_0 TT02_2023b {
+  hidden position_0_0 -0.07193565924049301
+  hidden position2_0_0 1709.6156890382804
+  hidden position_0_1 -0.06799356563223435
+  hidden position2_0_1 1698.8839983749124
+  hidden position_0_2 1684.950119961982
+  hidden position_0_3 1674.8553799576514
+  hidden linearVelocity_0 0.03483104425243315 -0.4990189372790796 -1.3944276535862878e-08
+  hidden angularVelocity_0 0.0001083715825136651 0.00010327922270954185 0.1422736913089244
+  hidden translation_1 0 0 0
+  hidden rotation_1 0.03571024827927755 -0.992410386164063 0.11767074233439574 0.5935330560378681
+  hidden linearVelocity_1 0.053248332430353866 -0.4876658136006884 -1.8388656485923153e-05
+  hidden angularVelocity_1 12.189843641369276 1.3440206481718284 0.10334200559070533
+  hidden translation_2 0 0 0
+  hidden rotation_2 -0.03398747282062924 0.9993409660999322 0.012746966922427053 2.424398851638502
+  hidden linearVelocity_2 0.05403640753786642 -0.5089797977300735 -4.020509410650437e-06
+  hidden angularVelocity_2 12.694063371624535 1.3474777709548693 0.11768241373835533
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 -1 0 1.0564576378527786
+  hidden linearVelocity_3 0.016695661778491532 -0.4889990712261879 3.151652906592497e-06
+  hidden angularVelocity_3 12.226039503994627 0.41851068126256014 0.15659816799503884
+  hidden translation_4 0 0 0
+  hidden rotation_4 0 0.9999999999999999 0 3.528088247881391
+  hidden linearVelocity_4 0.017492553156379362 -0.5103273870377515 1.750045980836571e-05
+  hidden angularVelocity_4 12.728631213178405 0.43536645657236145 0.1568377893537644
+  translation 0.04067020250364657 0.736159032993037 0.039285550876895815
+  rotation 3.7946538262916375e-05 -0.00016191295812209355 -0.9999999861721269 1.5324654882462292
+  name "sparringpartner_car_0"
+  controller "controller_jaune"
+  color 0.69 0.7 0.2
+  distanceSensorTranslation -0.08 0 0.005
+  distanceSensorRotation 0 0 1 3.14
+}
+DEF sparringpartner_car_1 TT02_2023b {
+  hidden position_0_0 0.18277388124078167
+  hidden position2_0_0 1730.8607595958606
+  hidden position_0_1 0.22133978119073935
+  hidden position2_0_1 1677.0644832886853
+  hidden position_0_2 1706.9556188513766
+  hidden position_0_3 1652.4321236736594
+  hidden linearVelocity_0 0.10105997342637446 0.4875680234525121 -3.301248411288609e-05
+  hidden angularVelocity_0 -0.0007738724980711662 -0.0017925053742979397 -0.404748887000436
+  hidden translation_1 0 0 0
+  hidden rotation_1 0.09125744449477059 0.9958015290138832 0.007168935618066953 3.2977295738536414
+  hidden linearVelocity_1 0.15756667007910669 0.5121703700483141 -0.00022725460414492262
+  hidden angularVelocity_1 -13.166577620043586 3.8246138880027414 -1.3328607663810674
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.10273983953322191 0.9245518323131188 0.3669447298151899 5.6950728039252345
+  hidden linearVelocity_2 0.15123607868976988 0.45173431013404947 2.309881669793408e-05
+  hidden angularVelocity_2 -11.145678457091833 3.678871328460369 -1.4433168555469398
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 1 0 2.070784701470937
+  hidden linearVelocity_3 0.05413362012431547 0.5229428947591366 -9.546784756274262e-05
+  hidden angularVelocity_3 -13.205191962909232 1.389583158036162 -0.42184682533292306
+  hidden translation_4 0 0 0
+  hidden rotation_4 0 1 0 6.237573192607704
+  hidden linearVelocity_4 0.047746603811770316 0.46262423801357927 0.00016036742731882444
+  hidden angularVelocity_4 -11.166809470021757 1.1760810733276699 -0.4189487293136947
+  translation -2.108838928964076 2.309253362129951 0.03928721864129965
+  rotation 8.46037520651025e-05 0.0002900967896870309 -0.9999999543430278 -1.4542989986975918
+  name "sparringpartner_car_1"
+  controller "controller_jaune"
+  color 0.69 0.7 0.2
+  distanceSensorTranslation -0.08 0 0.005
+  distanceSensorRotation 0 0 1 3.14
+}
+DEF sparringpartner_car_2 TT02_2023b {
+  hidden position_0_0 -0.017577813731855935
+  hidden position2_0_0 1723.0051003528679
+  hidden position_0_1 -0.017330120409352723
+  hidden position2_0_1 1685.1151496313605
+  hidden position_0_2 1699.321671632175
+  hidden position_0_3 1659.2216135343256
+  hidden linearVelocity_0 0.012668494049478164 -0.49982974889415777 1.0087064488075413e-07
+  hidden angularVelocity_0 3.613243415170351e-05 -3.9901619282192e-06 0.03573452575910434
+  hidden translation_1 0 0 0
+  hidden rotation_1 0.008788327112744517 -0.999908289074299 0.010304307209489568 1.412416752244651
+  hidden linearVelocity_1 0.017343201903556815 -0.4970355271686721 -3.6189866607766317e-06
+  hidden angularVelocity_1 12.430373057802479 0.4342926481927002 0.026123602236536644
+  hidden translation_2 0 0 0
+  hidden rotation_2 -0.008664288044145308 0.9998858623851148 0.012377088311199895 1.2215945602254745
+  hidden linearVelocity_2 0.01743578881637912 -0.502456869064333 -3.382549404190953e-06
+  hidden angularVelocity_2 12.555182336077392 0.4354750028289156 0.027070286597371467
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 -1 0 2.861638693686563
+  hidden linearVelocity_3 0.00817507772583947 -0.49722623457868304 3.265317895362039e-06
+  hidden angularVelocity_3 12.43442070992797 0.20432979121213818 0.03950322281964869
+  hidden translation_4 0 0 0
+  hidden rotation_4 0 1 0 0.46069243891473977
+  hidden linearVelocity_4 0.00826500040956477 -0.5025843097171324 3.594472156962095e-06
+  hidden angularVelocity_4 12.559198018514067 0.2063849815711504 0.039522908924204424
+  translation 5.107569950771921 1.630338386806035 0.039284922397835986
+  rotation -3.960842366452496e-05 -8.945120170130673e-05 -0.9999999952148276 1.5533294354945786
+  name "sparringpartner_car_2"
+  controller "controller_jaune"
+  color 0.69 0.7 0.2
+  distanceSensorTranslation -0.08 0 0.005
+  distanceSensorRotation 0 0 1 3.14
+}
+DEF TT02_2023b_RL TT02_2023b_RL {
+  hidden position_0_0 0.22737608448432794
+  hidden position2_0_0 828.3466044438136
+  hidden position_0_1 0.26138201034417574
+  hidden position2_0_1 1022.0691584482461
+  hidden position_0_2 2551.2557401931563
+  hidden position_0_3 2441.6768968101496
+  hidden linearVelocity_0 3.441189312263331e-06 -8.33248386792701e-06 1.6906547180800518e-06
+  hidden angularVelocity_0 -2.6786525842902456e-05 1.0322698706443757e-05 -2.8564274363311563e-05
+  hidden translation_1 0 0 0
+  hidden rotation_1 0.1112498805289193 0.9743343657577165 -0.19569365801121358 1.0563453055115541
+  hidden linearVelocity_1 2.9195070461983714e-06 -1.376913711816496e-05 -2.0206860750872088e-09
+  hidden angularVelocity_1 2.1854749899425334 2.375586627494313 -0.005443420671400586
+  hidden translation_2 0 0 0
+  hidden rotation_2 0.12994828671825168 0.988649508095079 0.07540287078320757 4.18325611084169
+  hidden linearVelocity_2 -7.079271349184232e-07 -1.1689472687692762e-05 4.150058913942204e-06
+  hidden angularVelocity_2 1.9757836963233215 2.0062688615761393 -0.00430142218302889
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 -1 0 0.2825054782441607
+  hidden linearVelocity_3 6.594444973493106e-06 -7.4355394004070976e-06 -8.955506064898442e-07
+  hidden angularVelocity_3 1.5529093060136656 2.7352329391808508 -0.00849054477964005
+  hidden translation_4 0 0 0
+  hidden rotation_4 0 0.9999999999999999 0 3.8009976244700754
+  hidden linearVelocity_4 2.9690617085249937e-06 -5.3724543798579084e-06 3.011730506352132e-06
+  hidden angularVelocity_4 1.3431870650384556 2.365858958666481 -0.007347713237305391
+  translation 3.5861312965282113 1.1951380285507491 0.03872318616031663
+  rotation -0.007175562623360387 -0.006547461200235014 -0.9999528199134544 0.516387406491249
+  name "TT02_2023b_RL"
+  controller "TT02_controller_RL"
+  distanceSensorTranslation -0.08 0 0.005
+  distanceSensorRotation 0 0 1 3.14
+}
+Robot {
+  children [
+    Emitter {
+      channel 1
+    }
+    Receiver {
+      channel 2
+    }
+  ]
+  name "superviseur"
+  controller "supervisor_controller"
+  supervisor TRUE
+}
+Solid {
+  translation 0 0.5 -0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 15 15 0.1
+      }
+    }
+  ]
+  name "sol_piste"
+  boundingObject Shape {
+    geometry Box {
+      size 15 15 0.1
+    }
+  }
+}
+DEF elements_pistes Group {
+  children [
+    Solid {
+      translation 7 -4 0.185
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 6.5 -3 0.185
+      rotation 0 0 0.9999999999999999 1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 7 -1.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_rouge"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 7 1.5 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 7 -2.1531e-12 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 7 -2.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+}
+DEF piste_interieure Group {
+  children [
+    Solid {
+      translation 3 0.25 0.185
+      rotation 0 0 1 -5.307179586466759e-06
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(1)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 4 0.25 0.185
+      rotation 0 0 1 1.57079
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(2)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.25 3.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_rouge(3)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.25 4.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_rouge(4)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.5 1.25 0.185
+      rotation 0 0 1 1.57079
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(16)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 4 4.25 0.185
+      rotation 0 0 1 3.14159
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(3)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 3.5 3.25 0.185
+      rotation 0 0 1 3.14159
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(14)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1 4.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(4)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 5.19723e-15 3.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(6)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1 3.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(13)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 3 0.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(15)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1 2.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(7)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 5.19723e-15 2.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(11)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1 0.25 0.185
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(9)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1 0.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(10)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -6.74634e-14 4.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(5)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1 3.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(8)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 6.74634e-14 3.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0.9 0 0
+              emissiveColor 0.9 0 0
+              specularColor 0.9 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_rouge(12)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.75 4.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_rouge(1)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.25 0.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_rouge(2)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.5 -0.25 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(1)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.5 4.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(6)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 2.5 4.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(7)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 2 3.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(12)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3 3.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(13)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.5 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(2)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.5 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(3)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.5 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(8)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.5 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(9)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -0.5 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(10)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -0.5 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(11)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.5 2.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(4)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4 2.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(14)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(15)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.5 3.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_rouge(5)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+}
+DEF piste_exterireure Group {
+  children [
+    Solid {
+      translation 5.25 -1.25 0.185
+      rotation 0 0 0.9999999999999999 1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(1)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 5 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(3)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 -1 0.1
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(5)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.25 -1 0.1
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(7)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 0.75 -1 0.1
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(8)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.75 -1 0.1
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(6)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(4)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.03043e-14 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(9)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(10)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.25 5.25 0.185
+      rotation 0 0 1 3.14159
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(2)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -0.25 5.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(3)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1.25 4.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(6)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.25 3.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(7)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.25 1.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(10)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.75 1.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(15)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 2.25 2.25 0.185
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(12)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 2.25 2.25 0.185
+      rotation 0 0 1 3.14159
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(13)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 2.25 2.25 0.185
+      rotation 0 0 -1 -1.5707953071795862
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(14)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.25 -1.25 0.185
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(8)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.75 -1.25 0.185
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(16)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 0.25 -1.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(9)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -1.25 5.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(4)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation -2.25 4.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(5)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 1.25 2.25 0.185
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              ambientIntensity 0.5
+              diffuseColor 0 0.6 0
+              emissiveColor 0 0.6 0
+              specularColor 0 0.6 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "ImageToStl.com_virage.obj"
+            ]
+          }
+        }
+      ]
+      name "virage_vert(11)"
+      boundingObject Mesh {
+        url [
+          "ImageToStl.com_virage.obj"
+        ]
+      }
+    }
+    Solid {
+      translation 5.75 -0.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(1)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(2)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(3)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.25 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(7)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.25 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(8)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 2.25 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(9)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.25 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(10)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 2.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(4)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 3.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(5)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 5.75 4.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(11)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.75 2.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(12)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.75 1.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(13)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.75 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(14)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -2.75 -0.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(15)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 0.75 -0.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(18)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 0.75 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(19)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.25 0.75 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(20)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 1.25 -0.25 0.1
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(21)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -1.25 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(16)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation -0.25 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(17)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 3.25 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(23)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 4.25 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(24)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 2.25 -1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.1 0.2
+          }
+        }
+      ]
+      name "droit_1m_vert(22)"
+      boundingObject Box {
+        size 1 0.1 0.2
+      }
+    }
+    Solid {
+      translation 0.5 5.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(1)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+    Solid {
+      translation 2 1.75 0.1
+      rotation 0 0 1 1.01503e-06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.1 0.2
+          }
+        }
+      ]
+      name "droit_50cm_vert(2)"
+      boundingObject Box {
+        size 0.5 0.1 0.2
+      }
+    }
+  ]
+}

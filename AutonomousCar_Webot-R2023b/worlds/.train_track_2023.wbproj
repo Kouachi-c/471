@@ -4,15 +4,20 @@ simulationViewPerspectives: 000000ff00000001000000020000017600000304010000000201
 sceneTreePerspectives: 000000ff00000001000000030000001c00000271000000fa0100000002010000000200
 maximizedDockId: -1
 centralWidgetVisible: 1
+projectionMode: PERSPECTIVE
+renderingMode: PLAIN
 orthographicViewHeight: 1
-textFiles: 1 "controllers/controller_jaune/controller_jaune.py" "controllers/TT02_controller_RL/TT02_controller_RL.py" "controllers/supervisor_controller/supervisor_controller.py"
+textFiles: 2 "../AutonomousCar_Webot-R2023b/controllers/controller_jaune/controller_jaune.py" "../AutonomousCar_Webot-R2023b/controllers/TT02_controller_RL/TT02_controller_RL.py" "../AutonomousCar_Webot-R2023b/controllers/supervisor_controller/supervisor_controller.py" "../AutonomousCar_Webot-R2023b/controllers/controller_camera/controller_camera.py"
 consoles: Console:All:All
 renderingDevicePerspectives: TT02_2023b_RL:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_RL:Webcam;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_RL:Webcam for Robotino 3;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_RL:cameraName_depth;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_jaune:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_jaune:Webcam;1;1;0;0
 renderingDevicePerspectives: TT02_2023b_jaune:Webcam for Robotino 3;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_jaune:cameraName_depth;1;0.895833;0;0
-renderingDevicePerspectives: TT02_2023b_violet:Astra;1;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_violet:Astra;0;0.895833;0;0
+renderingDevicePerspectives: TT02_2023b_violet:Webcam;1;1;0;0
 renderingDevicePerspectives: TT02_2023b_violet:Webcam for Robotino 3;1;0.895833;0;0
 renderingDevicePerspectives: TT02_2023b_violet:cameraName_depth;1;0.895833;0;0

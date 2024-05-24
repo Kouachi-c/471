@@ -40,10 +40,11 @@ PROTO TT02_2023b_RL [
 
   field  SFVec3f     frontCameraTranslation  0 0 0
   field  SFRotation  frontCameraRotation     0 0 1 0
-  field  SFString    frontCameraName         "Webcam for Robotino 3"
+  field  SFString    frontCameraName         "Webcam"
   field  SFString    frontCameraModel        "Festo - Robotino's webcam"
-  field  SFInt32     frontCameraWidth        320
-  field  SFInt32     frontCameraHeight       240
+  field  SFInt32     frontCameraWidth        640
+  field  SFInt32     frontCameraHeight       480
+  
 ]
 {
   Car {
@@ -211,8 +212,8 @@ PROTO TT02_2023b_RL [
             translation 0.027000 0.011000 0.034000
             name IS cameraName
             fieldOfView 1.04
-            width 320
-            height 240
+            width 640
+            height 480
             noise IS cameraColorNoise
           }
           RangeFinder {
@@ -267,6 +268,7 @@ PROTO TT02_2023b_RL [
             height IS frontCameraHeight
             near 0.02
           }
+
           DEF WEBCAM Pose {
             translation 0 0 0.035
             children [
@@ -307,19 +309,6 @@ PROTO TT02_2023b_RL [
 
         ]
         boundingObject Group {
-          children [
-            DEF BO_SCREW_1 Pose {
-              translation 0 -0.041 0.2195
-              rotation 1 0 0 -1.5708
-              children [
-                Cylinder {
-                  height 0.008
-                  radius 0.01
-                }
-              ]
-            }
-            
-          ]
         }
         physics Physics {
         }
